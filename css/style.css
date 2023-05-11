@@ -10,6 +10,7 @@
     --bgd-header: #2984FD ;
     --bgd-card-ligh-bl: #B5DDFF ;
     --bgd-section-ligh-purp: #9792E3;
+    --bgd-card-light-purp: #9792E3;
 }
 
 /* generics */
@@ -87,6 +88,18 @@ section{
     margin: 20px 0;
 }
 
+/* third-section  */
+.text-testimonial {
+    text-align: center;
+}
+
+.cards-testimonial > .card {
+    background-color: var(--bgd-card-light-purp);
+    border-radius: 40px;
+    /* ?todo remove */
+    margin: 30px 0;
+    min-height: 200px;
+}
 
 /************************************************
  RESPONSIVE
