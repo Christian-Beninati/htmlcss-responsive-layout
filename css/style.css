@@ -11,6 +11,7 @@
     --bgd-card-ligh-bl: #B5DDFF ;
     --bgd-section-ligh-purp: #9792E3;
     --bgd-card-light-purp: #9792E3;
+    --bgd-footer: #333333;
 }
 
 /* generics */
@@ -106,8 +107,17 @@ section{
 }
 
 /* sixth section */
-.call-to-act {
+main section:nth-child(6) {
+    margin-bottom: 0px;
+}
+
+.get-starter  {
     text-align: center;
+}
+
+/* footer */
+.footer {
+    background-color: var(--bgd-footer);
 }
 
 /************************************************
