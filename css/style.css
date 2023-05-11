@@ -1,0 +1,65 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom properties */
+:root {
+    --bgd-header: # ;
+    --bgd-footer: # ;
+}
+
+/* generics */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    
+}
+
+/* utilities */
+.container {
+    /* max-width: 1200px;
+    margin: 0 auto; */
+}
+
+.d-flex {
+    display: flex; 
+}
+
+.debug .border {
+    border: 2px dashed black; 
+}
+
+/* header */
+
+
+
+/* main */
+
+
+/* column */
+
+.column {
+    /* flex-basis: calc(100% / 3 );  
+    padding: px px; */
+}
+
+/* row */
+.row {
+    /* flex-wrap: wrap;  
+    margin: 0 -10px;   */
+}
+
+
+/* cards */
+.card {
+
+}
+
+img {
+
+}
