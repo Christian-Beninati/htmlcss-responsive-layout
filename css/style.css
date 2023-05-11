@@ -13,6 +13,8 @@
     --bgd-card-light-purp: #9792E3;
     --bgd-footer: #333333;
     --font-white: #fff;
+    --font-tex-color-card-bl: #5A6E7F;
+    --font-blue: #2984FD;
 }
 
 /* generics */
@@ -23,7 +25,7 @@ body{
 
 /* utilities */
 .container {
-    max-width: 430px;
+    max-width: 420px;
     margin: 0 auto;
 }
 
@@ -38,7 +40,7 @@ body{
 }
 
 .debug .border {
-    border: 2px dashed black; 
+    border: 2px dashed #000000; 
 }
 
 .cursor {
@@ -53,6 +55,19 @@ a {
     color: var(--font-white);
     padding: 0 10px;
     text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* header */
@@ -81,6 +96,10 @@ header {
     display: none;
 }
 
+.row.first-sect p {
+    color: var(--font-tex-color-card-bl);
+}
+
 .navbar-menu-desk  .button {
     border-radius: 20px;
     background-color: white;
@@ -95,11 +114,51 @@ section{
 }
 
 /* first section */
-.card.ligh-b, .card-benefit {
+.card.ligh-blue, .card-benefit {
     margin: 20px 0;
     border-radius: 20px;
     padding: 30px;
     background-color: var(--bgd-card-ligh-bl);
+}
+
+.row.first-sect h4 {
+    color: var(--font-blue);
+    font-size: 25px;
+    padding-bottom: 30px ;
+}
+
+.column.big-up > .card {
+    text-align: left;
+    padding: 0 30px;
+}
+
+.column.big-up h4 {
+    padding: 30px 0;
+}
+
+.button.blue {
+    border-radius: 20px;
+    background-color:var(--font-blue);
+    color: var(--font-white);
+    padding: 10px 65px;
+    margin: 30px 0;
+}
+
+.phone > img {
+    max-width: 70%;
+    padding:  0 10px;
+}
+
+.column.sml-up, .column.sml-dw {
+    text-align: center;
+}
+
+.column.sml-up h4, .column.sml-dw h4  {
+    padding: 20px 0;
+}
+
+.column.sml-up i, .column.sml-dw i {
+    color: var(--font-blue);
 }
 
 /* second section */
@@ -169,21 +228,25 @@ main section:nth-child(6) {
         flex-basis: 66.6%;
     }
 
-    .column.sm-up {
+    .column.sml-up {
         flex-basis: 33.3%;
     }
 
-    .column.sm-dw {
+    .column.sml-dw {
         flex-basis: calc(100% / 3);
     }
 
-    .card.ligh-b {
+    .card.ligh-blue {
         margin: 10px 0;
     }
 
     .column {
         padding: 0 10px;
         display: flex;
+    }
+
+    .phone > img {
+        max-width: 66%;
     }
 
     /* fourth section */
@@ -230,6 +293,21 @@ main section:nth-child(6) {
 
     .navbar-menu-desk {
         display: block;
+    }
+
+    /* fifth section */
+    .column.big-up .card {
+        display: flex;
+    }
+
+    .phone > img {
+        max-width: 100%;
+        height: auto;
+        padding-top: 90%;
+    }
+
+    .get-demo-apl {
+        max-width: 55%;
     }
 
     /* second-section */
