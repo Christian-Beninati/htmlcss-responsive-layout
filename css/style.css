@@ -67,8 +67,7 @@ section{
 }
 
 /* first section */
-.card.ligh-b {
-    max-width: 100%;
+.card.ligh-b, .card-benefit {
     margin: 20px 0;
     border-radius: 20px;
     padding: 30px;
@@ -101,9 +100,16 @@ section{
     min-height: 200px;
 }
 
+/* fourth section  */
+.row-benefit {
+    padding-bottom: 40px;
+}
+
 /************************************************
  RESPONSIVE
  ************************************************/
+
+ /* tablet 768px */
 @media screen and (min-width: 768px) {
 
     /* first section */
@@ -138,8 +144,23 @@ section{
         display: flex;
     }
 
+    /* fourth section */
+    .row-benefit {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .column-benefit {
+        flex-basis: calc(100% / 2 );
+        padding: 0 10px;
+        display: flex;
+    }
+
 }
 
+
+ /* mobile 480px */
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 850px;
@@ -152,5 +173,11 @@ section{
 
     .strateg-plan .left-cont, .strateg-plan .right-cont {
         margin: 0 20px;
+    }
+
+    /* fourth section */
+    .column-benefit {
+        flex-basis: calc(100% / 3 );
+    
     }
 }
