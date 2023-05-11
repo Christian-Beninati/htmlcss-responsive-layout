@@ -7,13 +7,14 @@
 
 /* custom properties */
 :root {
-    --bgd-header: # ;
+    --bgd-header: #2984FD ;
     --bgd-footer: # ;
 }
 
 /* generics */
 body{
     font-family: 'PT Sans', sans-serif;
+    padding-top: 130px;
 }
 
 header {
@@ -21,9 +22,13 @@ header {
 }
 
 /* utilities */
-.container {
-    /* max-width: 1200px;
-    margin: 0 auto; */
+.container-main {
+    max-width: 430px;
+    margin: 0 auto;
+
+    /* ?Todo remove */
+    height: 100vh;
+    /* background-color: lightblue; */
 }
 
 .d-flex {
@@ -35,31 +40,39 @@ header {
 }
 
 /* header */
-
-
-
-/* main */
-
-
-/* column */
-
-.column {
-    /* flex-basis: calc(100% / 3 );  
-    padding: px px; */
+header {
+    height: 80px;
+    background-color: var(--bgd-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-/* row */
-.row {
-    /* flex-wrap: wrap;  
-    margin: 0 -10px;   */
+.navbar {
+    height: 80px;
+    background-color: var(--bgd-header);
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
-
-/* cards */
-.card {
+/************************************************
+ RESPONSIVE
+ ************************************************/
+@media screen and (min-width: 480px) {
 
 }
 
-img {
+@media screen and (min-width: 768px) {
+    .container-main {
+       max-width: 710px;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .container-main {
+        max-width: 850px;
+    }
 }
