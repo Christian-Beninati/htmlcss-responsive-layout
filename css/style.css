@@ -12,6 +12,7 @@
     --bgd-section-ligh-purp: #9792E3;
     --bgd-card-light-purp: #9792E3;
     --bgd-footer: #333333;
+    --font-white: #fff;
 }
 
 /* generics */
@@ -40,6 +41,10 @@ body{
     border: 2px dashed black; 
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 .sec-l-p {
     background-color: var(--bgd-section-ligh-purp);
 }
@@ -60,6 +65,10 @@ header {
     background-color: var(--bgd-header);
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar-menu > i {
+    color: var(--font-white);
 }
 
 /* main */
