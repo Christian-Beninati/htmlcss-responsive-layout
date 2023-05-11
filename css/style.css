@@ -157,11 +157,24 @@ section{
         display: flex;
     }
 
+    /* fifth section */
+    .about-us {
+        display: flex;
+    }
+
+    .about-us-text {
+        flex-basis: 65%;
+    }
+
+    .help-companies {
+        flex-basis: 35%;
+    }
 }
 
 
- /* mobile 480px */
+ /* desktop 1200px */
 @media screen and (min-width: 1200px) {
+
     .container {
         max-width: 850px;
     }
