@@ -9,6 +9,7 @@
 :root {
     --bgd-header: #2984FD ;
     --bgd-card-ligh-bl: #B5DDFF ;
+    --bgd-section-ligh-purp: #9792E3;
 }
 
 /* generics */
@@ -37,6 +38,10 @@ body{
     border: 2px dashed black; 
 }
 
+.sec-l-p {
+    background-color: var(--bgd-section-ligh-purp);
+}
+
 /* header */
 header {
     height: 80px;
@@ -57,17 +62,31 @@ header {
 
 /* main */
 section{
-    margin-bottom: 110px;
+    margin-bottom: 80px;
 }
 
-    /* first section */
-.card {
+/* first section */
+.card.ligh-b {
     max-width: 100%;
     margin: 20px 0;
     border-radius: 20px;
     padding: 30px;
     background-color: var(--bgd-card-ligh-bl);
 }
+
+/* second section */
+.strateg-plan {
+    /* ?todo remove */
+    min-height: 500px;
+}
+
+.left-cont, .right-cont {
+    /* ?todo remove */
+    min-height: 200px;
+    background-color: beige;
+    margin: 20px 0;
+}
+
 
 /************************************************
  RESPONSIVE
@@ -79,7 +98,7 @@ section{
        max-width: 710px;
     }
 
-    .row {
+    .row.first-sect {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -10px;
@@ -93,11 +112,11 @@ section{
         flex-basis: 33.3%;
     }
 
-    .sm-dw {
+    .column.sm-dw {
         flex-basis: calc(100% / 3);
     }
 
-    .card {
+    .card.ligh-b {
         margin: 10px 0;
     }
 
@@ -111,5 +130,14 @@ section{
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 850px;
+    }
+
+    /* second-section */
+    .strateg-plan {
+        display: flex;
+    }
+
+    .strateg-plan .left-cont, .strateg-plan .right-cont {
+        margin: 0 20px;
     }
 }
