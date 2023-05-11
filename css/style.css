@@ -8,31 +8,29 @@
 /* custom properties */
 :root {
     --bgd-header: #2984FD ;
-    --bgd-footer: # ;
+    --bgd-card-ligh-bl: #B5DDFF ;
 }
 
 /* generics */
 body{
     font-family: 'PT Sans', sans-serif;
-    padding-top: 130px;
-}
-
-header {
-    
+    padding-top: 110px;
 }
 
 /* utilities */
-.container-main {
+.container {
     max-width: 430px;
     margin: 0 auto;
-
-    /* ?Todo remove */
-    height: 100vh;
-    /* background-color: lightblue; */
 }
 
 .d-flex {
-    display: flex; 
+    display: flex;
+    flex-direction: row; 
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .debug .border {
@@ -51,28 +49,67 @@ header {
 }
 
 .navbar {
-    height: 80px;
+    height: 100%;
     background-color: var(--bgd-header);
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+}
+
+/* main */
+section{
+    margin-bottom: 110px;
+}
+
+    /* first section */
+.card {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: var(--bgd-card-ligh-bl);
 }
 
 /************************************************
  RESPONSIVE
  ************************************************/
-@media screen and (min-width: 480px) {
-
-}
-
 @media screen and (min-width: 768px) {
-    .container-main {
+
+    /* first section */
+    .container {
        max-width: 710px;
     }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .column.big-up {
+        flex-basis: 66.6%;
+    }
+
+    .column.sm-up {
+        flex-basis: 33.3%;
+    }
+
+    .sm-dw {
+        flex-basis: calc(100% / 3);
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .column {
+        padding: 0 10px;
+        display: flex;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
-    .container-main {
+    .container {
         max-width: 850px;
     }
 }
