@@ -47,7 +47,7 @@ body{
     cursor: pointer;
 }
 
-.sec-l-p {
+.sec-ligh-pur {
     background-color: var(--bgd-section-ligh-purp);
 }
 
@@ -68,6 +68,11 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+h4 {
+    font-size: 25px;
+    padding-bottom: 30px ;
 }
 
 /* header */
@@ -123,8 +128,6 @@ section{
 
 .row.first-sect h4 {
     color: var(--font-blue);
-    font-size: 25px;
-    padding-bottom: 30px ;
 }
 
 .column.big-up > .card {
@@ -162,16 +165,61 @@ section{
 }
 
 /* second section */
-.strateg-plan {
-    /* ?todo remove */
-    min-height: 500px;
+.phot-text-dw img {
+    padding: 70px 0;
 }
 
-.left-cont, .right-cont {
-    /* ?todo remove */
-    min-height: 200px;
-    background-color: beige;
-    margin: 20px 0;
+.strateg-plan h4 {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.strateg-plan h4, .strateg-plan p {
+    color:var(--font-white);
+}
+
+.strateg-plan p {
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.strateg-plan .right-cont {
+    background-color: white;
+    border-radius: 50px;
+    margin: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.arrow{
+    padding-bottom: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--bgd-section-ligh-purp);
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.strateg-plan .right-cont h4, .strateg-plan .right-cont p {
+    color: black;
+}
+
+.strateg-plan .right-cont p {
+    padding-bottom: 100px;
+}
+
+.strateg-plan {
+    padding-bottom: 20px;
 }
 
 /* third-section  */
@@ -313,10 +361,22 @@ main section:nth-child(6) {
     /* second-section */
     .strateg-plan {
         display: flex;
+        align-items: flex-end;
+        padding-bottom: 100px;
+        justify-content: center;
     }
 
     .strateg-plan .left-cont, .strateg-plan .right-cont {
-        margin: 0 20px;
+        margin: 0 5px;
+        padding: 0 35px;
+    }
+
+    .left-cont {
+        max-width: 400px;
+    }
+    
+    .right-cont {
+        max-width: 320px;
     }
 
     /* fourth section */
